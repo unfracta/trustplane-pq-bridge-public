@@ -1,6 +1,6 @@
 # 02. Policy Behaviour Contract
 
-This is the buyer-readable behaviour contract for TrustPlane PQ Bridge.
+This is the reviewer-readable behaviour contract for TrustPlane PQ Bridge.
 
 The product rule is:
 
@@ -15,7 +15,7 @@ The v1 policy set is:
 3. `hybrid_required`
 4. `pq_required`
 
-`pq_preferred` is treated as deprecated compatibility behaviour and is not part of the public buyer-facing demo path.
+`pq_preferred` is treated as deprecated compatibility behaviour and is not part of the public demo path.
 
 ## Evidence Contract
 

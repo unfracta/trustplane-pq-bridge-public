@@ -4,7 +4,7 @@ Public evaluator materials for TrustPlane PQ Bridge.
 
 TrustPlane is policy-driven cryptographic trust infrastructure. PQ Bridge is the first concrete wedge: a controlled way to move signing and verification behaviour from classical cryptography toward hybrid and post-quantum trust modes.
 
-The core product repo remains private during design-partner evaluation. This public repo shows enough to review the product idea, policy contract, evidence model, and workflow-gate pattern without exposing source code or internal commercial material.
+The core product repo remains private during design-partner evaluation. This public repo shows enough to review the product idea, policy contract, evidence model, and workflow-gate pattern without exposing source code or private operating material.
 
 ## The 10-Minute Path
 
@@ -31,7 +31,7 @@ Read these in order:
 2. Tests.
 3. Private appliance scripts.
 4. Tokens, private keys, or customer data.
-5. Internal notes or commercial assumptions.
+5. Internal notes or private operating assumptions.
 6. Production-use rights.
 
 ## Current Status

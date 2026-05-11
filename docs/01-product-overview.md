@@ -28,7 +28,7 @@ Without a policy layer, migration logic becomes scattered across services, deplo
 
 Developers choose policy. TrustPlane decides the allowed cryptographic behaviour.
 
-Supported buyer-facing policies:
+Supported policies:
 
 1. `legacy_required`
 2. `hybrid_preferred`
@@ -54,7 +54,7 @@ Every outcome should answer:
 
 1. Not a hosted SaaS control plane today.
 2. Not KMS, HSM, key custody, or certificate lifecycle management.
-3. Not IAM, PKI, CI/CD, or ERP replacement.
+3. Not IAM, PKI, CI/CD, or certificate lifecycle management.
 4. Not a generic AI governance dashboard.
 5. Not a public source release.
 
