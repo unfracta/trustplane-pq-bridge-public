@@ -49,6 +49,6 @@ The important product moment is:
 
 TrustPlane PQ Bridge lets a team migrate signing trust modes through policy while preserving strict verification evidence and operational control.
 
-## Do Not Overclaim
+## We Do Not Overclaim
 
 PQ Bridge does not replace KMS, HSM, PKI, IAM, or certificate lifecycle management. It consumes existing customer trust infrastructure and makes policy-controlled signing and verification behaviour explicit.
