@@ -1,0 +1,22 @@
+{
+  "verification_mode": "strict",
+  "valid": true,
+  "verified_with": "ECDSA_P256",
+  "summary": "Verified with ECDSA_P256.",
+  "payload_sha256": "9c51a545cdb4644505ebad087a56392591c27d03ba92d41e42e608d834d61c13",
+  "envelope_sha256": "c6c7491bf409abf0a15d1b0ba713bdf69600766e1180f5e0816a867588831343",
+  "evidence_sha256": "9e0386b736e7ffb60397c48e12e622cc67a88bd3c20aad6bd5a49159f68dd97f",
+  "evidence": {
+    "decision": "verify",
+    "policy": "hybrid_preferred",
+    "capabilities_snapshot": {
+      "classicalSupported": true,
+      "postQuantumSupported": false
+    },
+    "fallback_applied": true,
+    "algorithms_used": [
+      "ECDSA_P256"
+    ],
+    "failure_reason": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "expected_refusal": true,
+  "tamper": "envelope.evidence.policy changed from hybrid_preferred to pq_required",
+  "verification_mode": "strict",
+  "valid": false,
+  "failure_reason": "Envelope evidence does not match the policy contract.",
+  "payload_sha256": "9c51a545cdb4644505ebad087a56392591c27d03ba92d41e42e608d834d61c13",
+  "envelope_sha256": "1a93b179bf04d02873e9b093550a262e8d7cb4217f8e9708cb32ae292d637019",
+  "evidence_sha256": "5c76ef83a5310eab033698f0be608f5f5087434f93adfcf57757272c351367b0",
+  "evidence": {
+    "decision": "reject",
+    "policy": "hybrid_preferred",
+    "capabilities_snapshot": {
+      "classicalSupported": true,
+      "postQuantumSupported": false
+    },
+    "fallback_applied": false,
+    "algorithms_used": [
+      "ECDSA_P256"
+    ],
+    "failure_reason": "Envelope evidence does not match the policy contract."
+  },
+  "verification_log": [
+    {
+      "step": "verification_policy",
+      "outcome": "success",
+      "reason": "Policy 'hybrid_preferred' evaluated for verification."
+    },
+    {
+      "step": "verification_decision_id",
+      "outcome": "success",
+      "reason": "Decision 7fccc15be748e5c5e03dcb23b53e1e29727a8582a0c5418d83647ff29abc0fca (policy v1)."
+    },
+    {
+      "step": "verification_signature_context",
+      "outcome": "success",
+      "reason": "Using metadata-bound verification input."
+    },
+    {
+      "step": "classical_capability",
+      "outcome": "success",
+      "reason": "Classical cryptography is supported."
+    },
+    {
+      "step": "post_quantum_capability",
+      "outcome": "unsupported",
+      "reason": "Post-quantum cryptography is not supported."
+    },
+    {
+      "step": "verification_evidence",
+      "outcome": "failure",
+      "reason": "Envelope evidence policy does not match envelope policy."
+    },
+    {
+      "step": "verification_decision",
+      "outcome": "failure",
+      "reason": "Envelope evidence does not match the policy contract."
+    }
+  ]
+}

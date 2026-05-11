@@ -1,0 +1,92 @@
+{
+  "report_version": "v1",
+  "generated_at": "2026-05-11T11:00:39.231Z",
+  "gate": {
+    "pass": false,
+    "mode": "strict",
+    "expected_policy": "pq_required",
+    "payload_sha256": "352904ac7b277fa7dd0a3a33f622aee92a0bee6f7aeeeb65d0545cae9632c833",
+    "envelope_sha256": "f2210b079e2318494437f438e7cbbc2ffe8a558b9495070fb319eef862880b87"
+  },
+  "checks": [
+    {
+      "name": "verification-valid",
+      "pass": true,
+      "detail": "Strict verification returned valid=true."
+    },
+    {
+      "name": "evidence-decision",
+      "pass": true,
+      "detail": "Verification evidence decision was 'verify'."
+    },
+    {
+      "name": "expected-policy",
+      "pass": false,
+      "detail": "Expected policy 'pq_required', envelope policy 'hybrid_preferred', evidence policy 'hybrid_preferred'."
+    },
+    {
+      "name": "hashes-present",
+      "pass": true,
+      "detail": "Payload and envelope SHA-256 fields are present."
+    }
+  ],
+  "verification": {
+    "valid": true,
+    "verified_with": "ECDSA_P256",
+    "evidence": {
+      "decision": "verify",
+      "policy": "hybrid_preferred",
+      "capabilities_snapshot": {
+        "classicalSupported": true,
+        "postQuantumSupported": false
+      },
+      "fallback_applied": true,
+      "algorithms_used": [
+        "ECDSA_P256"
+      ],
+      "failure_reason": null
+    },
+    "verification_log": [
+      {
+        "step": "verification_policy",
+        "outcome": "success",
+        "reason": "Policy 'hybrid_preferred' evaluated for verification."
+      },
+      {
+        "step": "verification_decision_id",
+        "outcome": "success",
+        "reason": "Decision 7fccc15be748e5c5e03dcb23b53e1e29727a8582a0c5418d83647ff29abc0fca (policy v1)."
+      },
+      {
+        "step": "verification_signature_context",
+        "outcome": "success",
+        "reason": "Using metadata-bound verification input."
+      },
+      {
+        "step": "classical_capability",
+        "outcome": "success",
+        "reason": "Classical cryptography is supported."
+      },
+      {
+        "step": "post_quantum_capability",
+        "outcome": "unsupported",
+        "reason": "Post-quantum cryptography is not supported."
+      },
+      {
+        "step": "verification_attempt",
+        "outcome": "unsupported",
+        "reason": "Post-quantum verification unavailable in this environment."
+      },
+      {
+        "step": "verification_attempt",
+        "outcome": "success",
+        "reason": "Classical signature verified."
+      }
+    ],
+    "summary": "Verified with ECDSA_P256.",
+    "payload_sha256": "352904ac7b277fa7dd0a3a33f622aee92a0bee6f7aeeeb65d0545cae9632c833",
+    "envelope_sha256": "f2210b079e2318494437f438e7cbbc2ffe8a558b9495070fb319eef862880b87",
+    "verification_mode": "strict",
+    "timestamp": "2026-05-11T11:00:39.230Z"
+  }
+}
