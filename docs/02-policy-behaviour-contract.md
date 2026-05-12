@@ -6,7 +6,7 @@ The product rule is:
 
 > Developers choose policy. TrustPlane PQ Bridge defines, enforces, verifies, and records the resulting signing behaviour.
 
-## Buyer-Facing Policy Set
+## Enterprise Policy Set
 
 The v1 policy set is:
 

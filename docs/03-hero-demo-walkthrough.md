@@ -45,7 +45,7 @@ The important product moment is:
 3. the evidence explains what happened
 4. the same evidence can be shown to a reviewer without source access
 
-## Buyer Takeaway
+## Enterprise Takeaway
 
 TrustPlane PQ Bridge lets a team migrate signing trust modes through policy while preserving strict verification evidence and operational control.
 

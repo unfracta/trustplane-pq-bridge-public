@@ -1,6 +1,6 @@
 # 01. Product Overview
 
-TrustPlane PQ Bridge helps teams control cryptographic migration through policy rather than one-off application logic.
+TrustPlane PQ Bridge is policy-governed signing infrastructure for enterprise applications.
 
 The first wedge is post-quantum signing migration:
 
@@ -43,18 +43,36 @@ Every outcome should answer:
 4. Did fallback happen?
 5. Why did signing, verification, or refusal occur?
 
+## Current Algorithm Coverage
+
+Classical signing support:
+
+1. `ECDSA_P256`
+2. `ECDSA_P384`
+3. `ED25519`
+4. `RSA_PSS_2048_SHA256`
+5. `RSA_PSS_3072_SHA384`
+
+Post-quantum signing support in PQ-capable runtimes:
+
+1. `oqs-ml-dsa-44`
+2. `oqs-ml-dsa-65`
+3. `oqs-ml-dsa-87`
+
+`SLH-DSA` is a future PQ signature-family candidate, not current support. `ML-KEM` is a key-encapsulation primitive and is outside the current signing-focused contract.
+
 ## What This Is
 
-1. Policy-driven cryptographic trust infrastructure.
+1. Policy-governed signing infrastructure for enterprise applications.
 2. A deterministic signing and verification control layer.
 3. A source-free evaluator path for design partners.
-4. A practical proof point for post-quantum migration readiness.
+4. A practical proof point for post-quantum signing readiness.
 
 ## What This Is Not
 
 1. Not a hosted SaaS control plane today.
 2. Not KMS, HSM, key custody, or certificate lifecycle management.
-3. Not IAM, PKI, CI/CD, or certificate lifecycle management.
+3. Not IAM, PKI, CI/CD, or a generic policy-management dashboard.
 4. Not a generic AI governance dashboard.
 5. Not a public source release.
 
