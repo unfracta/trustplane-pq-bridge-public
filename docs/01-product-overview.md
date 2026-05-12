@@ -58,8 +58,20 @@ Post-quantum signing support in PQ-capable runtimes:
 1. `oqs-ml-dsa-44`
 2. `oqs-ml-dsa-65`
 3. `oqs-ml-dsa-87`
+4. `oqs-slh-dsa-sha2-128s`
+5. `oqs-slh-dsa-sha2-128f`
+6. `oqs-slh-dsa-sha2-192s`
+7. `oqs-slh-dsa-sha2-192f`
+8. `oqs-slh-dsa-sha2-256s`
+9. `oqs-slh-dsa-sha2-256f`
+10. `oqs-slh-dsa-shake-128s`
+11. `oqs-slh-dsa-shake-128f`
+12. `oqs-slh-dsa-shake-192s`
+13. `oqs-slh-dsa-shake-192f`
+14. `oqs-slh-dsa-shake-256s`
+15. `oqs-slh-dsa-shake-256f`
 
-`SLH-DSA` is a future PQ signature-family candidate, not current support. `ML-KEM` is a key-encapsulation primitive and is outside the current signing-focused contract.
+SLH-DSA support is limited to pure signing variants in this release. `ML-KEM` is a key-encapsulation primitive and is outside the current signing-focused contract.
 
 ## What This Is
 
