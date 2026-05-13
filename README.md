@@ -16,7 +16,8 @@ Read these in order:
 4. [GitHub Actions Proof Gate](docs/04-github-actions-proof-gate.md)
 5. [Evidence Examples](docs/05-evidence-examples.md)
 6. [Verification Checklist](docs/06-verification-checklist.md)
-7. [Request Evaluator Access](docs/07-request-evaluator-access.md)
+7. [Performance Snapshot](docs/08-performance-snapshot.md)
+8. [Request Evaluator Access](docs/07-request-evaluator-access.md)
 
 ## What This Shows
 
@@ -24,6 +25,7 @@ Read these in order:
 2. How strict verification produces reviewer-readable evidence.
 3. How tampered or wrong-policy proof is refused.
 4. How a workflow gate can enforce: no valid TrustPlane proof, no deployment.
+5. How policy-governed signing performs in a local evaluator benchmark.
 
 ## What This Does Not Include
 

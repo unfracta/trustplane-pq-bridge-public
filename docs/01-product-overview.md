@@ -95,3 +95,9 @@ The value is not “another signing library.”
 The value is being able to prove:
 
 > This specific action was signed or refused under the correct policy, with the correct capabilities, at the correct point of execution, and verification evidence exists.
+
+Performance snapshot:
+
+1. See [08. Performance Snapshot](08-performance-snapshot.md) for local evaluator benchmark results.
+2. The default ML-DSA path remained sub-millisecond in the latest standard benchmark.
+3. SLH-DSA is supported, but its signing cost means it should be selected deliberately rather than treated as the default online signing path.
