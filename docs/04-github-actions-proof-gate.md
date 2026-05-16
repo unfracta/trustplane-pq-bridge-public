@@ -1,10 +1,10 @@
 # 04. GitHub Actions Proof Gate
 
-The workflow-gate story is:
+The first workflow-gate story is:
 
 > No valid TrustPlane proof, no deployment.
 
-Use this pattern when a release, promotion, deployment, or other workflow should proceed only if a TrustPlane envelope verifies under the expected policy.
+Use this pattern when a release, promotion, deployment, or other high-assurance workflow should proceed only if a TrustPlane envelope verifies under the expected policy.
 
 ## Expected Workflow States
 
@@ -35,6 +35,12 @@ flowchart LR
   C -->|"yes"| D["Deployment continues"]
   C -->|"no"| E["Deployment refused"]
 ```
+
+The broader trust-control pattern is:
+
+> No valid TrustPlane proof, no high-assurance action.
+
+Deployment is the first wedge, not the product boundary. The same pattern can apply to privileged automation, regulated workflow actions, sensitive API execution, and long-lived verification records.
 
 ## Boundary
 

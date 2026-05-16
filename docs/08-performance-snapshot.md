@@ -4,7 +4,7 @@ This snapshot shows local evaluator performance for TrustPlane PQ Bridge.
 
 It is intended to answer a practical question:
 
-> Does policy-governed signing add enough overhead to make the system impractical?
+> Does high-assurance trust control add enough overhead to make the system impractical?
 
 The short answer from this run is no for the default enterprise path. Classical, hybrid, and ML-DSA post-quantum signing remained sub-millisecond in the standard benchmark. SLH-DSA is supported, but it has a different performance profile and should be selected deliberately.
 
@@ -64,9 +64,9 @@ Standard signing infrastructure usually answers:
 
 TrustPlane PQ Bridge answers a wider question:
 
-> Was this signature produced and verified under the correct cryptographic policy, with evidence of capabilities, algorithms, fallback, and refusal behaviour?
+> Was this action allowed under the correct trust policy and verified under evidence-bound conditions?
 
-That policy and evidence layer adds work around the raw signing operation. The benchmark indicates that this overhead remains practical for common enterprise application workflows, especially when ML-DSA is the default post-quantum signature family.
+That policy, verification, and evidence layer adds work around the raw signing operation. The benchmark indicates that this overhead remains practical for common high-assurance enterprise workflows, especially when ML-DSA is the default post-quantum signature family.
 
 ## Positioning Guidance
 

@@ -4,7 +4,7 @@ This is the public version of the PQ Bridge demo story.
 
 ## Demo Promise
 
-Show that PQ Bridge can move a signing workflow from classical to hybrid to post-quantum policy, verify the result strictly, and preserve evidence without changing the application payload.
+Show that PQ Bridge can move a high-assurance signing or verification boundary from classical to hybrid to post-quantum policy, verify the result strictly, and preserve evidence without changing the application payload.
 
 ## Audience
 
@@ -20,6 +20,8 @@ Enterprises cannot switch every system to post-quantum signing at once.
 Some boundaries still need classical compatibility. Some boundaries need both classical and PQ proof. Some future-facing boundaries should require PQ-only behaviour.
 
 The migration risk is uncontrolled exception handling.
+
+The trust-control risk is simpler: a critical action proceeds even though the proof is invalid, ambiguous, or bound to the wrong policy.
 
 ## Minute 2: The Policy Change
 
@@ -45,10 +47,18 @@ The important product moment is:
 3. the evidence explains what happened
 4. the same evidence can be shown to a reviewer without source access
 
+For a deployment proof gate, that becomes:
+
+> No valid TrustPlane proof, no deployment.
+
+More generally:
+
+> No valid TrustPlane proof, no high-assurance action.
+
 ## Enterprise Takeaway
 
-TrustPlane PQ Bridge lets a team migrate signing trust modes through policy while preserving strict verification evidence and operational control.
+TrustPlane PQ Bridge lets a team control high-assurance signing and verification boundaries through policy while preserving strict verification evidence and operational control.
 
 ## We Do Not Overclaim
 
-PQ Bridge does not replace KMS, HSM, PKI, IAM, or certificate lifecycle management. It consumes existing customer trust infrastructure and makes policy-controlled signing and verification behaviour explicit.
+PQ Bridge does not replace KMS, HSM, PKI, IAM, CI/CD, ordinary application signing, or certificate lifecycle management. It consumes existing customer trust infrastructure and makes policy-controlled signing, verification, refusal, and evidence behaviour explicit.

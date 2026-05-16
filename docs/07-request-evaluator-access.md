@@ -7,7 +7,7 @@ The core product repo remains private. Qualified reviewers can request access to
 ## Who This Is For
 
 1. Security architecture teams evaluating post-quantum readiness.
-2. Platform engineering teams responsible for signing or verification boundaries.
+2. Platform engineering teams responsible for high-assurance signing or verification boundaries.
 3. Regulated engineering teams that need reviewer-readable evidence.
 4. Strategic reviewers evaluating policy-controlled cryptographic migration.
 
@@ -16,7 +16,7 @@ The core product repo remains private. Qualified reviewers can request access to
 When requesting access, include:
 
 1. Your organisation and role.
-2. The signing or verification boundary you want to evaluate.
+2. The high-assurance signing or verification boundary you want to evaluate.
 3. Whether the workflow is classical-only, hybrid migration, or PQ-forward.
 4. Whether you need appliance evaluation, architecture review, or design-partner discussion.
 

@@ -1,8 +1,8 @@
 # 01. Product Overview
 
-TrustPlane PQ Bridge is policy-governed signing infrastructure for enterprise applications.
+TrustPlane PQ Bridge is policy-driven cryptographic trust control for high-assurance enterprise boundaries.
 
-The first wedge is post-quantum signing migration:
+The first wedge is post-quantum trust control for signing and verification boundaries:
 
 ```mermaid
 flowchart LR
@@ -21,6 +21,7 @@ Post-quantum migration is not a single switch.
 2. Some boundaries should require classical plus PQ signatures.
 3. Some future-facing workflows should require PQ-only behaviour.
 4. Security reviewers need evidence of what happened and why.
+5. High-assurance actions should not proceed when proof is invalid, tampered, or bound to the wrong policy.
 
 Without a policy layer, migration logic becomes scattered across services, deployment scripts, and reviewer notes.
 
@@ -42,6 +43,14 @@ Every outcome should answer:
 3. Which algorithms were used?
 4. Did fallback happen?
 5. Why did signing, verification, or refusal occur?
+
+Conventional signing proves:
+
+> This payload was signed.
+
+PQ Bridge proves:
+
+> This action was allowed under the correct trust policy and verified under evidence-bound conditions.
 
 ## Current Algorithm Coverage
 
@@ -75,8 +84,8 @@ SLH-DSA support is limited to pure signing variants in this release. `ML-KEM` is
 
 ## What This Is
 
-1. Policy-governed signing infrastructure for enterprise applications.
-2. A deterministic signing and verification control layer.
+1. Policy-driven cryptographic trust control for high-assurance enterprise boundaries.
+2. A deterministic signing, verification, refusal, and evidence control layer.
 3. A source-free evaluator path for design partners.
 4. A practical proof point for post-quantum signing readiness.
 
@@ -87,6 +96,7 @@ SLH-DSA support is limited to pure signing variants in this release. `ML-KEM` is
 3. Not IAM, PKI, CI/CD, or a generic policy-management dashboard.
 4. Not a generic AI governance dashboard.
 5. Not a public source release.
+6. Not a replacement for ordinary application signing where policy evidence, fail-closed behaviour, and high-assurance verification are not required.
 
 ## Why It Matters
 
@@ -94,7 +104,7 @@ The value is not “another signing library.”
 
 The value is being able to prove:
 
-> This specific action was signed or refused under the correct policy, with the correct capabilities, at the correct point of execution, and verification evidence exists.
+> This specific action was allowed or refused under the correct trust policy, with the correct capabilities, at the correct point of execution, and verification evidence exists.
 
 Performance snapshot:
 

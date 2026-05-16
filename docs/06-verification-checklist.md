@@ -1,6 +1,6 @@
 # 06. Verification Checklist
 
-Use this checklist when reviewing PQ Bridge evidence.
+Use this checklist when reviewing PQ Bridge evidence for a high-assurance signing or verification boundary.
 
 ## Required Proof
 
@@ -25,7 +25,8 @@ The evidence is useful when a reviewer can answer:
 3. Which algorithms were used?
 4. Did fallback happen?
 5. Why did verification pass or fail?
+6. Was the action allowed under the correct trust policy?
 
 ## Boundary
 
-This checklist proves policy and verification behaviour. It does not grant production rights, source access, redistribution rights, or named public reference rights.
+This checklist proves policy and verification behaviour for the selected boundary. It does not grant production rights, source access, redistribution rights, or named public reference rights.

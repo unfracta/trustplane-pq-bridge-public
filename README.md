@@ -2,7 +2,7 @@
 
 Public evaluator materials for TrustPlane PQ Bridge.
 
-TrustPlane is policy-governed signing infrastructure for enterprise applications. PQ Bridge is the first concrete wedge: a controlled way to move signing and verification behaviour from classical cryptography toward hybrid and post-quantum trust modes.
+TrustPlane is policy-driven cryptographic trust control for high-assurance enterprise boundaries. PQ Bridge is the first concrete wedge: a controlled way to prove that critical signing and verification actions were allowed under the correct trust policy as organisations move from classical cryptography toward hybrid and post-quantum trust modes.
 
 The core product repo remains private during design-partner evaluation. This public repo shows enough to review the product idea, policy contract, evidence model, and workflow-gate pattern without exposing source code or private operating material.
 
@@ -21,11 +21,12 @@ Read these in order:
 
 ## What This Shows
 
-1. How policy controls signing and verification behaviour.
+1. How policy controls high-assurance signing and verification behaviour.
 2. How strict verification produces reviewer-readable evidence.
 3. How tampered or wrong-policy proof is refused.
 4. How a workflow gate can enforce: no valid TrustPlane proof, no deployment.
-5. How policy-governed signing performs in a local evaluator benchmark.
+5. How the broader pattern becomes: no valid TrustPlane proof, no high-assurance action.
+6. How trust-control overhead performs in a local evaluator benchmark.
 
 ## What This Does Not Include
 
